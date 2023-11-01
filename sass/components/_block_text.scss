@@ -1,0 +1,66 @@
+.block_text {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    right: 0;
+    z-index: 999999;
+    overflow: hidden;
+    background:  $black;
+    display: none;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .text {
+            max-height: 60%;
+            width: 40%;
+            overflow-y: scroll;
+            white-space: none;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            gap: 40px;
+    
+            .text_item {
+                padding-right: 2rem;
+                
+                p {
+                    color: white;
+                    
+                    a {
+                        text-decoration: none;
+                        color: $dark-blue;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    color: $dark-blue;
+                }
+            }
+        }
+        }
+}
+
+.bold {
+    @include open-sans-bold;
+}
+
+@media (max-width: 1600px) {
+    .block_text__content .text {
+        width: 60%;
+    }
+}
+
+@media (max-height: 550px) {
+    .block_text__content .text {
+        width: 95%;
+        font-size: 16px;
+        max-height: 70%;
+    }
+}

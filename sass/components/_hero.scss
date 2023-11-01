@@ -1,0 +1,239 @@
+.hero {
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    height: 100vh;
+    width: 100vw;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+
+    &__background {
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        position: relative;
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 60%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 64px;
+
+        &__title {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
+            align-items: center;
+
+            h1 {
+                // @include orbitron-bold;
+                font-family: orbitronBold;
+                font-size: 176px;
+                line-height: 105%;
+                background: -moz-radial-gradient(#F8F3E8 2%, #F9CD6B);
+                background: -webkit-linear-gradient(#F8F3E8 2%, #F9CD6B);
+                background: radial-gradient(#F8F3E8 2%, #F9CD6B);
+                -webkit-background-clip: text;  
+                -webkit-text-fill-color: transparent;  
+                background-clip: text;
+                opacity: 1;
+                margin-left: 0;
+                transition: all 0.8s ease-in-out;
+                position: relative;
+            
+    
+                &:nth-of-type(1) {
+                    animation-name: showText;
+                    animation-duration: 10s;
+                }
+
+                &:nth-of-type(2) {
+                    @include taviraj-light;
+                    position: absolute;
+                    margin: 0 auto;
+                    opacity: 0;
+                    top: 0;
+                    animation-name: hideText;
+                    animation-duration: 4s;
+                }
+            }
+        }
+
+        &__btns {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
+
+            button {
+                cursor: pointer;
+            }
+        }
+
+        &__bottomBtns {
+            position: absolute;
+            bottom: 78px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            align-items: center;
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
+
+            h4 {
+                @include orbitron-bold;
+            }
+
+            .btns {
+                display: flex;
+                flex-direction: row;
+                gap: 40px;
+
+                button {
+                    color: #6D6D6D;
+                    @include orbitron-bold;
+                    font-size: 24px;
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                .button_active {
+                    text-shadow: 0px 0px 16px #1E76DD;
+                    line-height: 105%;
+                    background: -moz-radial-gradient($light-blue 2%, $dark-blue);
+                    background: -webkit-linear-gradient($light-blue 2%, $dark-blue);
+                    background: radial-gradient($light-blue 2%, $dark-blue);
+                    -webkit-background-clip: text;  
+                    -webkit-text-fill-color: transparent;  
+                    background-clip: text;
+                }
+            }
+        }
+    }
+}
+
+.opacity_hero {
+    opacity: 0;
+}
+
+.play_intro {
+    .hero__background::after {
+        opacity: 0;
+    }
+
+    .hero__content__title {
+        opacity: 0;
+    }
+
+    .hero__content__btns button:nth-of-type(1) {
+        opacity: 0;
+    }
+
+    .hero__content__btns {
+        position: absolute;
+        bottom: 72px;
+    }
+
+    .hero__content__bottomBtns {
+        opacity: 0;
+    }
+}
+
+.play_intro_timeOut {
+
+    .hero__background::after {
+        display: none;
+    }
+
+    .hero__content__title h1 {
+        display: none;
+    }
+
+    .hero__content__title {
+        display: none;
+    }
+
+    .hero__content__btns button:nth-of-type(1) {
+        display: none;
+    }
+
+    .hero__content__bottomBtns {
+        display: none;
+    }
+}
+
+.display_hero_not {
+    display: none;
+}
+
+@media (max-width: 1600px) {
+    .hero__content__title h1 {
+        font-size: 6.5rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .hero__content__title h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-height: 550px) {
+    .hero__content__bottomBtns {
+        position: relative;
+        bottom: unset;
+        gap: 10px;
+    }
+    .hero__content__btns {
+        gap: 10px;
+    }
+
+    .hero__content {
+        gap: 45px;
+    }
+
+    .hero__content__bottomBtns .btns button {
+        font-size: 18px;
+    }
+}
+
+@media (max-height: 480px) {
+    .hero__content__title h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-height: 380px) {
+    .hero__content {
+        gap: 35px;
+    }
+}

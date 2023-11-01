@@ -1,0 +1,29 @@
+.rotate_device_animation {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background: rgb(0, 0, 0, 0.8);
+    z-index: 9999999999;
+    display: none;
+
+    &__content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .rotate_animation {
+            width: 80%;
+            height: auto;
+        }
+    }
+}
+
+@media all and (orientation: portrait) {
+    .rotate_device_animation {
+        display: block;
+    }
+}

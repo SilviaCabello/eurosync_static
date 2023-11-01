@@ -1,0 +1,161 @@
+.main_btn {
+    text-decoration: none;
+    border: none;
+    @include orbitron-bold;
+    font-size: 20px;
+    border-left: 2px solid $dark-blue;
+    border-right: 2px solid $dark-blue;
+    border-radius: 5px;
+    padding: 18px 26px;
+    position: relative;
+    text-shadow: 0px 0px 16px #1E76DD;
+    line-height: 105%;
+    background: -moz-radial-gradient($light-blue 2%, $dark-blue);
+    background: -webkit-linear-gradient($light-blue 2%, $dark-blue);
+    background: radial-gradient($light-blue 2%, $dark-blue);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
+    background-clip: text;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    z-index: 0;
+
+    span {
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    span:nth-of-type(2) {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: radial-gradient(transparent 65%, rgb(80, 153, 238, 0.6));
+        opacity: 0;
+        transition: all 0.8s ease-in-out;
+    }
+
+    &::before,
+    &::after,
+    span:nth-of-type(1):before,
+    span:nth-of-type(1)::after {
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 2px;
+        background: transparent;
+        transition: all 0.5s ease-in-out;
+    }
+
+    &::before {
+        top: 0.4px;
+        left: 0;
+        background-color: $dark-blue;
+    }
+    
+    &::after {
+        top: 0.4px;
+        right: 0;
+        background-color: $dark-blue;
+    }
+
+    span:nth-of-type(1)::before {
+        bottom: 0.4px;
+        left: 0;
+        background-color: $dark-blue;
+    }
+
+    span:nth-of-type(1)::after {
+        bottom: 0.4px;
+        right: 0;
+        background-color: $dark-blue;
+    }
+
+    &:hover::before,
+    &:hover::after,
+    &:hover span:nth-of-type(1)::before,
+    &:hover span:nth-of-type(1)::after  {
+        width: 55%;
+    }
+
+    &:hover span:nth-of-type(2) {
+        opacity: 1;
+    }
+}
+
+#skip {
+    color: #6D6D6D;
+    @include orbitron-bold;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+}
+
+.zuruck_btn {
+    color: white;
+    background-color: transparent;  
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    @include orbitron-bold;
+    padding-right: 2rem;
+    position: absolute;
+    top: 96px;
+    right: 96px;
+
+    &::after {
+        content: url("../assets/svg/close.svg");
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+@media (max-width: 1600px) {
+    .zuruck_btn {
+        top: 45px;
+        right: 45px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .zuruck_btn {
+        font-size: 20px;
+    }
+
+    .main_btn {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+}
+
+@media (max-width: 750px) {
+    .zuruck_btn {
+        font-size: 18px;
+    }
+}
+
+@media (max-height: 550px) {
+    #skip {
+        font-size: 18px;
+    }
+
+    .main_btn {
+        padding: 10px 10px;
+    }
+}
+
+@media (max-height: 480px) {
+    .zuruck_btn {
+        font-size: 16px;
+        top: 24px;
+        right: 24px;
+    }
+
+    .zuruck_btn::after {
+        top: -6px;
+    }
+}

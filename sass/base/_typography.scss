@@ -1,0 +1,66 @@
+//--------- Open Sans Regular ---------///
+
+@font-face {
+    src: url("../assets/fonts/OpenSans-Regular.ttf");
+    font-family: openSansRegular;
+}
+
+@mixin open-sans-regular {
+    font-family: openSansRegular;
+    font-weight: 400;
+    font-style: normal;
+}
+
+//--------- Open Sans Bold ---------///
+
+@font-face {
+    src: url("../assets/fonts/OpenSans-Bold.ttf");
+    font-family: openSansBold;
+}
+
+@mixin open-sans-bold {
+    font-family: openSansBold;
+    font-weight: 700;
+    font-style: normal;
+}
+
+//--------- Orbitron Regular ---------///
+
+@font-face {
+    src: url("../assets/fonts/Orbitron-Regular.ttf");
+    font-family: orbitronRegular;
+}
+
+@mixin orbitron-regular {
+    font-family: orbitronRegular;
+    font-weight: 400;
+    font-style: normal;
+}
+
+//--------- Orbitron Bold ---------///
+
+@font-face {
+    src: url("../assets/fonts/Orbitron-Bold.ttf");
+    font-family: orbitronBold;
+}
+
+@mixin orbitron-bold {
+    font-family: orbitronBold;
+    font-weight: 700;
+    font-style: normal;
+}
+
+//--------- Taviraj Light ---------///
+
+@font-face {
+    src: url("../assets/fonts/Taviraj-Light.ttf");
+    font-family: tavirajLight;
+}
+
+@mixin taviraj-light {
+    font-family: tavirajLight;
+    font-weight: 700;
+    font-style: normal;
+}
+
+

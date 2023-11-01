@@ -1,0 +1,94 @@
+@keyframes from_left {
+    from {left: -100%}
+    to {left: 0%}
+}
+
+@keyframes from_left_revert {
+    from {left: 0%}
+    to {left: -100%}
+}
+
+.left_animation {
+    animation-name: from_left;
+    animation-duration: 1s;
+    
+}
+
+.revert_animation_left {
+    animation-name: from_left_revert;
+}
+
+@keyframes from_right {
+    from {right: -100%}
+    to {right: 0%}
+}
+
+@keyframes from_right_revert {
+    from {right: 0%}
+    to {right: -100%}
+}
+
+.right_animation {
+    animation-name: from_right;
+    animation-duration: 1s;
+    
+}
+
+.revert_animation_right {
+    animation-name: from_right_revert;
+}
+
+@keyframes from_bottom {
+    from {bottom: -100%}
+    to {bottom: 0%}
+}
+@keyframes from_bottom_revert {
+    from {bottom: 0%}
+    to {bottom: -100%}
+}
+
+.bottom_animation {
+    animation-name: from_bottom;
+    animation-duration: 1s;
+}
+
+.revert_animation_bottom {
+    animation-name: from_bottom_revert;
+}
+
+
+@keyframes opacityAnimation {
+    from {opacity: 100%;}
+    to {opacity: 0%;}
+}
+
+.opacity_animation {
+    animation-name: opacityAnimation;
+    animation-duration: 1s;
+    
+}
+
+@keyframes opacityAnimationRevert {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+.top_animation {
+    animation-name: opacityAnimationRevert;
+    animation-duration: 1s; 
+}
+
+@keyframes fromBottom {
+    from {margin-top: 100%;}
+    to {margin-top: 0%;}
+}
+
+@keyframes showText {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+@keyframes hideText {
+    from {opacity: 100%;}
+    to {opacity: 0%;}
+}

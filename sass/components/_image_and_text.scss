@@ -1,0 +1,120 @@
+.image_and_text {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: $black;
+    z-index: 999999;
+    overflow: hidden;
+    display: none;
+    
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 125px;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        
+        > button {
+            position: absolute;
+        }
+    
+        .image {
+            width: 100%;
+            height: 100%;
+    
+            img {
+                width: auto;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .text {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            align-items: flex-start;
+
+            p {
+                padding-right: 2rem;
+            }
+
+            .logo {
+                height: 74px;
+                width: auto;
+                object-fit: contain;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1900px) {
+    .image_and_text__content .text {
+        max-height: 500px;
+        overflow-y: scroll;
+        margin-top: -100px;
+    }
+
+    .image_and_text__content {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 42px;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .image_and_text__content .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1500px) {
+    .image_and_text__content .text {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 1100px) {
+    .image_and_text__content {
+        grid-template-columns: 1fr 1.1fr;
+    }
+
+    .image_and_text__content .text {
+        width: 90%;
+
+        p {
+            font-size: 16px;
+            line-height: 31px;
+        }
+    }
+
+    .image_and_text__content .text .logo {
+        height: 60px;
+        width: auto;
+        object-fit: contain;
+    }
+}
+
+@media(max-height: 550px) {
+    .image_and_text__content .text {
+        max-height: 60%;
+    }
+}
+
+@media(max-height: 480px) {
+    .image_and_text__content {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .image_and_text__content .text {
+        max-height: 50%;
+    }
+}

@@ -1,1 +1,1 @@
-# eurosync_static
+# eurosync

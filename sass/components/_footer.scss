@@ -1,0 +1,110 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        > ul {
+            display: flex;
+            flex-direction: row;
+            gap: 78px;
+            background-color: $black;
+            padding: 24px 200px;
+            border-top-right-radius: 64px;
+            border-top-left-radius: 64px;
+            margin: 0;
+
+            li {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                position: relative;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    @include orbitron-regular;
+                    font-size: 18px;
+
+                    img {
+                        margin-left: 10px;
+                        width: 24px;
+                        height: 24px;
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+
+                > ul {
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    gap: 0px;
+                    top: -190%;
+                    background-color: $black;
+                    width: 100%;
+                    padding-left: 10px;
+                    margin-left: -10px;
+
+                    z-index: -1;
+                    opacity: 0%;
+                    top: -120%;
+                    transition: all 0.3s ease-in-out;
+
+                    li {
+                        background: transparent;
+                        padding-left: 10px;
+                        margin-left: -10px;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            background: rgba(0, 209, 206, 0.10);
+                        }
+
+                        a {
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+                }
+
+                .open_dropdown {
+                    z-index: 1;
+                    opacity: 100%;
+                    top: -190%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .footer__content > ul {
+        gap: 45px;
+        padding: 18px 90px;
+    }
+}
+
+@media (max-height: 550px) {
+    .footer__content > ul {
+        gap: 24px;
+        padding: 10px 45px;
+
+        li {
+            a {
+                font-size: 14px;
+
+                img {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+}
