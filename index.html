@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="sass/main.css">
+    <title>EuroSync - Home</title>
+</head>
+<body>
+    <header>
+        <div class="nav" id="nav">
+            <ul>
+                <li class="top_btn"><a href="#" class="main_btn"><span></span>Referenzen<span></span></a></li>
+                <li class="bottom_left_btn"><a href="#" class="main_btn" id=""><span></span>Unser Werk<span></span></a></li>
+                <li class="bottom_center_btn"><a href="#" class="main_btn"><span></span>Kontakt<span></span></a></li>
+                <li class="bottom_right_btn"><a href="#" class="main_btn"><span></span>Kundenserver<span></span></a></li>
+            </ul>
+        </div>
+
+        <!-- <div class="hero">
+            <div class="hero__content">
+                <div class="hero__content__title">
+                    <h1>EuroSync</h1>
+                    <h1>EuroSync</h1>
+                </div>
+                <div class="hero__content__btns">
+                    <button class="main_btn" id="start"><span></span>Start<span></span></button>
+                    <button id="skip">skip intro</button>
+                </div>
+                <div class="hero__content__bottomBtns">
+                    <h4>Choose your Experience</h4>
+                    <div class="btns">
+                        <button id="sound">sound</button>
+                        <button id="silence">silence</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__background">
+                <video src="assets/video/Eurosync Website Intro QT-H264.mov" playsinline loop autoplay muted="true" id="intro_video"></video>
+            </div>
+        </div> -->
+    </header>
+
+    <main>
+        <section class="rotate_device_animation">
+            <div class="rotate_device_animation__content">
+                <lottie-player src="assets/json/rotate_device.json" class="rotate_animation" background="transparent"  speed="1" loop autoplay></lottie-player>
+            </div>
+        </section>
+
+        <section class="grid_with_lightbox top_animation">
+            <div class="grid_with_lightbox__content">
+                <button id="" class="zuruck_btn">Zurück</button>
+                <h2>Eurosync</h2>
+                <div class="grid" id="grid">
+                </div>
+                <div class="section_intro_video">
+                    <video autoplay muted playsinline class="">
+                        <source src="assets/video/EuroSync_Referenzen.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="swiper swiper_lightbox" id="lightbox">
+                    <button id="" class="zuruck_btn close"></button>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-text">
+                            <h3>Anger Management</h3>
+                            <p>Anger Management" dreht sich um den Therapeuten Dr. Charlie Goodson (gespielt von Charlie Sheen), der seine eigene Wut bewältigen muss, während er skurrile Patienten mit emotionalen Problemen behandelt. Die Serie bietet humorvolle Einblicke in Therapie, menschliche Emotionen und Beziehungen.</p>
+                            <button class="main_btn play" id="boton"><span></span>Play Video<span></span></button>
+                        </div>
+                        <div class="swiper-slide-image">
+                            <img src="assets/img/angerManagement.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-video">
+                            <button id="zuruck" class="zuruck_btn">Zurück</button>
+                            <video autoplay loop muted playsinline controls class="">
+                                <source src="assets/video/Eurosync Website Intro QT-H264.mov" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="swiper-slide-background">
+                            <img src="assets/img/slide_background.png" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-text">
+                            <h3>Anger Management</h3>
+                            <p>Anger Management" dreht sich um den Therapeuten Dr. Charlie Goodson (gespielt von Charlie Sheen), der seine eigene Wut bewältigen muss, während er skurrile Patienten mit emotionalen Problemen behandelt. Die Serie bietet humorvolle Einblicke in Therapie, menschliche Emotionen und Beziehungen.</p>
+                            <button class="main_btn play"><span></span>Play Video<span></span></button>
+                        </div>
+                        <div class="swiper-slide-image">
+                            <img src="assets/img/20.000 Species of Bees.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-background">
+                            <img src="assets/img/20.000 Species of Bees.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-text">
+                            <h3>Anger Management</h3>
+                            <p>Anger Management" dreht sich um den Therapeuten Dr. Charlie Goodson (gespielt von Charlie Sheen), der seine eigene Wut bewältigen muss, während er skurrile Patienten mit emotionalen Problemen behandelt. Die Serie bietet humorvolle Einblicke in Therapie, menschliche Emotionen und Beziehungen.</p>
+                        </div>
+                        <div class="swiper-slide-image">
+                            <img src="assets/img/Midsommar.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-background">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-text">
+                            <h3>Anger Management</h3>
+                            <p>Anger Management" dreht sich um den Therapeuten Dr. Charlie Goodson (gespielt von Charlie Sheen), der seine eigene Wut bewältigen muss, während er skurrile Patienten mit emotionalen Problemen behandelt. Die Serie bietet humorvolle Einblicke in Therapie, menschliche Emotionen und Beziehungen.</p>
+                        </div>
+                        <div class="swiper-slide-image">
+                            <img src="assets/img/Nancy Drew.webp" alt="">
+                        </div>
+                        <div class="swiper-slide-background">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-text">
+                            <h3>Anger Management</h3>
+                            <p>Anger Management" dreht sich um den Therapeuten Dr. Charlie Goodson (gespielt von Charlie Sheen), der seine eigene Wut bewältigen muss, während er skurrile Patienten mit emotionalen Problemen behandelt. Die Serie bietet humorvolle Einblicke in Therapie, menschliche Emotionen und Beziehungen.</p>
+                        </div>
+                        <div class="swiper-slide-image">
+                            <img src="assets/img/Locked In.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-background">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-text">
+                            <h3>Anger Management</h3>
+                            <p>Anger Management" dreht sich um den Therapeuten Dr. Charlie Goodson (gespielt von Charlie Sheen), der seine eigene Wut bewältigen muss, während er skurrile Patienten mit emotionalen Problemen behandelt. Die Serie bietet humorvolle Einblicke in Therapie, menschliche Emotionen und Beziehungen.</p>
+                            <button class="main_btn play"><span></span>Play Video<span></span></button>
+                        </div>
+                        <div class="swiper-slide-image">
+                            <img src="assets/img/angerManagement.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-video"></div>
+                        <div class="swiper-slide-background">
+                            <img src="assets/img/slide_background.png" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-text">
+                            <h3>Anger Management</h3>
+                            <p>Anger Management" dreht sich um den Therapeuten Dr. Charlie Goodson (gespielt von Charlie Sheen), der seine eigene Wut bewältigen muss, während er skurrile Patienten mit emotionalen Problemen behandelt. Die Serie bietet humorvolle Einblicke in Therapie, menschliche Emotionen und Beziehungen.</p>
+                            <button class="main_btn play"><span></span>Play Video<span></span></button>
+                        </div>
+                        <div class="swiper-slide-image">
+                            <img src="assets/img/20.000 Species of Bees.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-background">
+                            <img src="assets/img/20.000 Species of Bees.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-text">
+                            <h3>Anger Management</h3>
+                            <p>Anger Management" dreht sich um den Therapeuten Dr. Charlie Goodson (gespielt von Charlie Sheen), der seine eigene Wut bewältigen muss, während er skurrile Patienten mit emotionalen Problemen behandelt. Die Serie bietet humorvolle Einblicke in Therapie, menschliche Emotionen und Beziehungen.</p>
+                        </div>
+                        <div class="swiper-slide-image">
+                            <img src="assets/img/Midsommar.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-background">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-text">
+                            <h3>Anger Management</h3>
+                            <p>Anger Management" dreht sich um den Therapeuten Dr. Charlie Goodson (gespielt von Charlie Sheen), der seine eigene Wut bewältigen muss, während er skurrile Patienten mit emotionalen Problemen behandelt. Die Serie bietet humorvolle Einblicke in Therapie, menschliche Emotionen und Beziehungen.</p>
+                        </div>
+                        <div class="swiper-slide-image">
+                            <img src="assets/img/Nancy Drew.webp" alt="">
+                        </div>
+                        <div class="swiper-slide-background">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-text">
+                            <h3>Anger Management</h3>
+                            <p>Anger Management" dreht sich um den Therapeuten Dr. Charlie Goodson (gespielt von Charlie Sheen), der seine eigene Wut bewältigen muss, während er skurrile Patienten mit emotionalen Problemen behandelt. Die Serie bietet humorvolle Einblicke in Therapie, menschliche Emotionen und Beziehungen.</p>
+                        </div>
+                        <div class="swiper-slide-image">
+                            <img src="assets/img/Locked In.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-background">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-text">
+                            <h3>Anger Management</h3>
+                            <p>Anger Management" dreht sich um den Therapeuten Dr. Charlie Goodson (gespielt von Charlie Sheen), der seine eigene Wut bewältigen muss, während er skurrile Patienten mit emotionalen Problemen behandelt. Die Serie bietet humorvolle Einblicke in Therapie, menschliche Emotionen und Beziehungen.</p>
+                            <button class="main_btn play"><span></span>Play Video<span></span></button>
+                        </div>
+                        <div class="swiper-slide-image">
+                            <img src="assets/img/angerManagement.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-video"></div>
+                        <div class="swiper-slide-background">
+                            <img src="assets/img/slide_background.png" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-text">
+                            <h3>Anger Management</h3>
+                            <p>Anger Management" dreht sich um den Therapeuten Dr. Charlie Goodson (gespielt von Charlie Sheen), der seine eigene Wut bewältigen muss, während er skurrile Patienten mit emotionalen Problemen behandelt. Die Serie bietet humorvolle Einblicke in Therapie, menschliche Emotionen und Beziehungen.</p>
+                            <button class="main_btn play"><span></span>Play Video<span></span></button>
+                        </div>
+                        <div class="swiper-slide-image">
+                            <img src="assets/img/20.000 Species of Bees.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-background">
+                            <img src="assets/img/20.000 Species of Bees.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-text">
+                            <h3>Anger Management</h3>
+                            <p>Anger Management" dreht sich um den Therapeuten Dr. Charlie Goodson (gespielt von Charlie Sheen), der seine eigene Wut bewältigen muss, während er skurrile Patienten mit emotionalen Problemen behandelt. Die Serie bietet humorvolle Einblicke in Therapie, menschliche Emotionen und Beziehungen.</p>
+                        </div>
+                        <div class="swiper-slide-image">
+                            <img src="assets/img/Midsommar.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-background">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-text">
+                            <h3>Anger Management</h3>
+                            <p>Anger Management" dreht sich um den Therapeuten Dr. Charlie Goodson (gespielt von Charlie Sheen), der seine eigene Wut bewältigen muss, während er skurrile Patienten mit emotionalen Problemen behandelt. Die Serie bietet humorvolle Einblicke in Therapie, menschliche Emotionen und Beziehungen.</p>
+                        </div>
+                        <div class="swiper-slide-image">
+                            <img src="assets/img/Nancy Drew.webp" alt="">
+                        </div>
+                        <div class="swiper-slide-background">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-text">
+                            <h3>Anger Management</h3>
+                            <p>Anger Management" dreht sich um den Therapeuten Dr. Charlie Goodson (gespielt von Charlie Sheen), der seine eigene Wut bewältigen muss, während er skurrile Patienten mit emotionalen Problemen behandelt. Die Serie bietet humorvolle Einblicke in Therapie, menschliche Emotionen und Beziehungen.</p>
+                        </div>
+                        <div class="swiper-slide-image">
+                            <img src="assets/img/Locked In.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide-background">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev" id="prev"></div>
+                    <div class="swiper-button-next" id="next"></div>
+                  </div>
+            </div>
+           <div class="grid_with_lightbox__background">
+                <img src="assets/img/bg_references.png" alt="">
+           </div>
+        </section>
+
+        <section class="image_and_text left_animation" id="unser_werk">
+            <div class="image_and_text__content">
+                <button id="zuruckt" class="zuruck_btn">Zurück</button>
+                <div class="image">
+                    <img src="assets/img/About_Logos.png" alt="">
+                </div>
+                <div class="text">
+                    <img src="assets/img/Logo.png" alt="" class="logo">
+                    <p>Die Berliner Firma EuroSync synchronisiert seit 1998
+                        Spielfilme, TV-Serien, Dokumentationen und Kinoproduktionen
+                        in herausragender Qualität für den deutschsprachigen Raum.
+                        In derzeit 7 Studios, 3 Mischungen und mit ca. 40 festangestellten Mitarbeitern werden TV- und Kinoproduktionen mit hoher Professionalität bearbeitet.</p>
+                    <p>Die Studios verfügen allesamt über Tageslicht, sowie Klimatisierung und
+                        ermöglichen somit eine angenehme Arbeitsatmosphäre. Darüber hinaus sind alle Studios u.a. mit den von der Firma EuroSync entwickelten EuroTaker- bzw. EuroController-Systemen ausgerüstet.</p>
+                    <p>Neben der Kompetenz im eigentlichen Kerngeschäft
+                        steht EuroSync für absolute Zuverlässigkeit
+                        und ist ein reliabler Partner vieler nationaler und
+                        internationaler Sender und Programmanbieter,
+                        wie bspw. Amazon, ARD, CBS, Disney, P7, SKY, Studiocanal, Viacom, Warner, Weltkino, Wild Bunch und ZDF.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="title_iconLink right_animation">
+            <div class="title_iconLink__content">
+                <button id="zuruck" class="zuruck_btn">Zurück</button>
+                <div class="title">
+                    <h2>Eurosync</h2>
+                    <h2>Kundenserver</h2>
+                </div>
+                <div class="inconLink">
+                    <a href="#"><img src="assets/img/Knauf.png" alt=""></a>
+                </div>
+            </div>
+            <div class="title_iconLink__background">
+                <img src="assets/img/Kundenserver.png" alt="">
+            </div>
+       </section>
+
+        <section class="swiper_with_icons bottom_animation">
+            <div class="swiper_with_icons__content">
+                <button id="zuruck" class="zuruck_btn">Zurück</button>
+                <div class="swiper swiper_icons">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="icons">
+                            <button class="phone"><img src="assets/svg/call.png" alt=""></button>
+                            <button class="email"><img src="assets/svg/email.png" alt=""></button>
+                        </div>
+                        <div class="text">
+                            <h2 class="title">Info und Anfragen</h2>
+                            <a href="tel: 123-456-7890" class="phone">123-456-7890</a>
+                            <a href="mailto:info@eurosync.com" class="email">info@eurosync.com</a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="icons">
+                            <button class="phone"><img src="assets/svg/call.png" alt=""></button>
+                            <button class="email"><img src="assets/svg/email.png" alt=""></button>
+                        </div>
+                        <div class="text">
+                            <h2 class="title">Geschäftsführung</h2>
+                            <a href="tel: 123-456-7890" class="phone">123-456-7890</a>
+                            <a href="mailto:info@eurosync.com" class="email">info@eurosync.com</a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="icons">
+                            <button class="phone"><img src="assets/svg/call.png" alt=""></button>
+                            <button class="email"><img src="assets/svg/email.png" alt=""></button>
+                        </div>
+                        <div class="text">
+                            <h2 class="title">Lorem ipsum</h2>
+                            <a href="tel: 123-456-7890" class="phone">123-456-7890</a>
+                            <a href="mailto:info@eurosync.com" class="email">info@eurosync.com</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+            </div>
+       </section> 
+
+       <section class="block_text bottom_animation Impressum">
+            <div class="block_text__content">
+                <button class="zuruck_btn">Zurück</button>
+                <div class="text">
+
+                    <div class="text_item">
+                        <p class="bold">Impressum</p>
+                    </div>
+                    <div class="text_item">
+                        <p>EuroSync GmbH</p>
+                    </div>
+                    <div class="text_item">
+                        <p>Nunsdorfer Ring 15</p>
+                        <p>12277 Berlin</p>
+                        <p>Telefon: <a href="tel:030 – 7576578 - 0">030 – 7576578 - 0</a></p>
+                        <p>Fax: 030 – 7576578 - 10</p>
+                        <p>eMail: <a href="mailto:Media@EuroSync.de">Media@EuroSync.de</a></p>
+                    </div>
+                    <div class="text_item">
+                        <p>Die Firma EuroSync bemüht sich im Rahmen des Zumutbaren, auf dieser Webseite richtige und vollständige Angaben zur Verfügung zu stellen. Die Firma EuroSync übernimmt jedoch keine Haftung für Verlinkungen, welche auf die Webseite der Firma EuroSync direkt oder indirekt verweisen. Die Firma EuroSync ist ebenfalls nicht für den Inhalt von Seiten verantwortlich, die mit einer derartigen Verlinkungen erreicht werden. Die Firma EuroSync behält sich das Recht vor, ohne vorherige Ankündigung Änderungen oder Ergänzungen der bereitgestellten Informationen vorzunehmen. Der Inhalt dieser Webseite ist urheberrechtlich geschützt.</p>
+                    </div>
+                    <div class="text_item">
+                        <p>Die Firma EuroSync bemüht sich im Rahmen des Zumutbaren, auf dieser Webseite richtige und vollständige Angaben zur Verfügung zu stellen. Die Firma EuroSync übernimmt jedoch keine Haftung für Verlinkungen, welche auf die Webseite der Firma EuroSync direkt oder indirekt verweisen. Die Firma EuroSync ist ebenfalls nicht für den Inhalt von Seiten verantwortlich, die mit einer derartigen Verlinkungen erreicht werden. Die Firma EuroSync behält sich das Recht vor, ohne vorherige Ankündigung Änderungen oder Ergänzungen der bereitgestellten Informationen vorzunehmen. Der Inhalt dieser Webseite ist urheberrechtlich geschützt.</p>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <section class="block_text bottom_animation Datenschutz">
+            <div class="block_text__content">
+                <button class="zuruck_btn">Zurück</button>
+                <div class="text">
+                    <div class="text_item">
+                        <p class="bold">Datenschutz</p>
+                    </div>
+                    <div class="text_item">
+                        <p>EuroSync GmbH</p>
+                    </div>
+                    <div class="text_item">
+                        <p>Nunsdorfer Ring 15</p>
+                        <p>12277 Berlin</p>
+                        <p>Telefon: <a href="tel:030 – 7576578 - 0">030 – 7576578 - 0</a></p>
+                        <p>Fax: 030 – 7576578 - 10</p>
+                        <p>eMail: <a href="mailto:Media@EuroSync.de">Media@EuroSync.de</a></p>
+                    </div>
+                    <div class="text_item">
+                        <p>Die Firma EuroSync bemüht sich im Rahmen des Zumutbaren, auf dieser Webseite richtige und vollständige Angaben zur Verfügung zu stellen. Die Firma EuroSync übernimmt jedoch keine Haftung für Verlinkungen, welche auf die Webseite der Firma EuroSync direkt oder indirekt verweisen. Die Firma EuroSync ist ebenfalls nicht für den Inhalt von Seiten verantwortlich, die mit einer derartigen Verlinkungen erreicht werden. Die Firma EuroSync behält sich das Recht vor, ohne vorherige Ankündigung Änderungen oder Ergänzungen der bereitgestellten Informationen vorzunehmen. Der Inhalt dieser Webseite ist urheberrechtlich geschützt.</p>
+                    </div>
+                    <div class="text_item">
+                        <p>Die Firma EuroSync bemüht sich im Rahmen des Zumutbaren, auf dieser Webseite richtige und vollständige Angaben zur Verfügung zu stellen. Die Firma EuroSync übernimmt jedoch keine Haftung für Verlinkungen, welche auf die Webseite der Firma EuroSync direkt oder indirekt verweisen. Die Firma EuroSync ist ebenfalls nicht für den Inhalt von Seiten verantwortlich, die mit einer derartigen Verlinkungen erreicht werden. Die Firma EuroSync behält sich das Recht vor, ohne vorherige Ankündigung Änderungen oder Ergänzungen der bereitgestellten Informationen vorzunehmen. Der Inhalt dieser Webseite ist urheberrechtlich geschützt.</p>
+                    </div>
+                    <div class="text_item">
+                        <p>Die Firma EuroSync bemüht sich im Rahmen des Zumutbaren, auf dieser Webseite richtige und vollständige Angaben zur Verfügung zu stellen. Die Firma EuroSync übernimmt jedoch keine Haftung für Verlinkungen, welche auf die Webseite der Firma EuroSync direkt oder indirekt verweisen. Die Firma EuroSync ist ebenfalls nicht für den Inhalt von Seiten verantwortlich, die mit einer derartigen Verlinkungen erreicht werden. Die Firma EuroSync behält sich das Recht vor, ohne vorherige Ankündigung Änderungen oder Ergänzungen der bereitgestellten Informationen vorzunehmen. Der Inhalt dieser Webseite ist urheberrechtlich geschützt.</p>
+                    </div>
+                </div>
+            </div>
+       </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Sprache<img src="assets/svg/language.svg" alt=""></a>
+                    <ul>
+                        <li><a href="">DE</a></li>
+                        <li><a href="">EN</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Datenschutz</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </div>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </footer>
+</body>
+</html>
