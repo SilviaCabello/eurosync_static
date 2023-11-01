@@ -950,7 +950,7 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   width: 60vw;
-  max-height: 550px;
+  max-height: 551px;
   overflow-y: scroll !important;
   gap: 16px;
   padding: 20px;
@@ -1108,7 +1108,7 @@ body {
     margin-bottom: 45px;
   }
   .grid_with_lightbox__content .grid {
-    max-height: 450px;
+    max-height: 451px;
   }
   .grid_with_lightbox__content .swiper_lightbox .swiper-wrapper .swiper-slide {
     gap: 0;
