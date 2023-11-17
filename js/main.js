@@ -322,3 +322,23 @@ for (var i=0,l=iconsPrev.length;i<l;i++) {
         }
     })
 }
+
+
+
+// Video loading //
+
+// const videoElement = document.getElementById("intro_video");
+// const heroContent = document.querySelectorAll(".hero__content")
+
+// videoElement.addEventListener('loadeddata', (e) => {
+//    if(videoElement.readyState >= 3){
+//        console.log("loaded video")
+//        heroContent[0].style.display = "flex";
+//    } else  {
+//       heroContent[0].style.display = "none"
+//    }
+// });
+
+
+
+
