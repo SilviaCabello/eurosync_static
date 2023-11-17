@@ -5,6 +5,7 @@ if(skipBtn) {
     skipBtn.addEventListener("click", () => {
         for (var i=0,l=hero.length;i<l;i++) {
             hero[i].classList.add("opacity_hero")
+            document.getElementById("nav").style.opacity = "100%"
         }
         window.setTimeout(function() {
             for (var i=0,l=hero.length;i<l;i++) {
@@ -63,6 +64,7 @@ if(start) {
              for (var i=0,l=hero.length;i<l;i++) {
             hero[i].classList.add("opacity_hero")
             }
+            document.getElementById("nav").style.opacity = "100%"
             window.setTimeout(function() {
                 for (var i=0,l=hero.length;i<l;i++) {
                     hero[i].classList.add("display_hero_not")
@@ -84,6 +86,14 @@ for (var i=0,l=sectionVideo.length;i<l;i++) {
             ev.target.parentNode.style.display = "none"
         },1000);
    };
+
+   sectionVideo[i].addEventListener("click", (ev) => {
+        ev.target.parentNode.classList.add("finished_video");
+
+        window.setTimeout(function() {
+            ev.target.parentNode.style.display = "none"
+        },1000);
+   })
 }
 
 
@@ -208,6 +218,8 @@ const swiper = new Swiper('.swiper_icons', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    observer: true,
+    observeParents: true,
 });
 
 
@@ -221,6 +233,8 @@ const swiperLightbox = new Swiper('.swiper_lightbox', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    observer: true,
+    observeParents: true,
 });
 
 const grid = document.getElementById("grid");
@@ -269,19 +283,42 @@ const iconBtn = document.querySelectorAll('.swiper-slide .icons button');
 for (var i=0,l=iconBtn.length;i<l;i++) {
     iconBtn[i].addEventListener("click", (ev) => {
         if(ev.target.className === "phone") {
-            console.log("phone")
             ev.target.parentNode.nextElementSibling.classList.toggle("display_phone")
             ev.target.parentNode.nextElementSibling.classList.remove("display_email")
         }
         if(ev.target.className === "email") {
-            console.log("email")
             ev.target.parentNode.nextElementSibling.classList.toggle("display_email")
             ev.target.parentNode.nextElementSibling.classList.remove("display_phone")
         }
     })
 }
 
+const iconsNext = document.querySelectorAll(".swiper_icons .swiper-button-next");
+for (var i=0,l=iconsNext.length;i<l;i++) {
+    iconsNext[i].addEventListener("click", () => {
 
-// Referenzen //
+        let otherEmail = document.querySelector('.text.display_email');
+        if (otherEmail) {
+            document.querySelector('.text.display_email').classList.remove('display_email');
+        }
+        let otherPhone = document.querySelector('.text.display_phone');
+        if (otherPhone) {
+            document.querySelector('.text.display_phone').classList.remove('display_phone');
+        }
+    })
+}
 
-// 1. Swiper oculto. Push de las imágenes a un grid vacío. Click en imagen del grid y guardar el tab index. Con el tab index, display swiper.
+const iconsPrev = document.querySelectorAll(".swiper_icons .swiper-button-prev");
+for (var i=0,l=iconsPrev.length;i<l;i++) {
+    iconsPrev[i].addEventListener("click", () => {
+
+        let otherEmail = document.querySelector('.text.display_email');
+        if (otherEmail) {
+            document.querySelector('.text.display_email').classList.remove('display_email');
+        }
+        let otherPhone = document.querySelector('.text.display_phone');
+        if (otherPhone) {
+            document.querySelector('.text.display_phone').classList.remove('display_phone');
+        }
+    })
+}

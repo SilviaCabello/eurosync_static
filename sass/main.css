@@ -1088,7 +1088,6 @@ body {
   height: 100%;
   opacity: 1;
   transition: all 0.8s ease-in-out;
-  pointer-events: none;
 }
 .section_intro_video video {
   width: 100%;
@@ -1544,6 +1543,7 @@ body {
   background-position: center center;
   position: relative;
   z-index: 0;
+  opacity: 0%;
 }
 .nav::before {
   content: "";
